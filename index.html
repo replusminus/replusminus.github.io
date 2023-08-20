@@ -14,10 +14,10 @@
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     min-height: 100vh;
     background-color: white;
     font-family: Arial, sans-serif;
@@ -27,16 +27,129 @@
   .title {
     font-family: "Berlin Sans FB Demi Bold";
     color: #00966C;
-    font-size: 72px;
+    font-size: 48px;
     font-weight: bold;
+    text-align: center;
+  }
+
+  .message {
+    margin: 0px auto;
+	  width: 100%;
+    text-align: center;
+    color: #00966C;
+    font-size: 14px;
   }
 
   h2 {
    margin: 0px auto;
-   font-size: 36px;
+   font-size: 30px;
    font-weight: bold;
    text-align: center;
    color: #00966C;
+  }
+
+	h3 {
+   margin: 20px auto;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+   color: #00966C;
+  }
+
+  /* Media queries for different screen sizes */
+  @media (min-width: 320px) {
+    /* xs */
+    .title {
+    }
+  
+    .message {
+    }
+
+    h2 {
+    }
+  }
+  
+  @media (min-width: 375px) {
+    /* ms */
+    .title {
+      font-size: 54px;
+    }
+  
+    .message {
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+  }
+  
+  @media (min-width: 425px) {
+    /* s */
+    .title {
+      font-size: 58px;
+    }
+  
+    .message {
+			font-size: 18px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  
+  }
+  
+  @media (min-width: 640px) {
+    /* sm */
+    .title {
+      font-size: 30px;
+    }
+  
+		.message {
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* md */
+    .title {
+      font-size: 68px;
+    }
+  
+    .message {
+			font-size: 20px;
+    }
+
+    h2 {
+      font-size: 46px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* lg */
+    .title {
+      font-size: 68px;
+    }
+  
+    .message {
+			font-size: 20px;
+    }
+
+    h2 {
+      font-size: 46px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    /* xl */
+  }
+  
+  @media (min-width: 1536px) {
+    /* 2xl */
   }
 </style>
 </head>
@@ -45,11 +158,30 @@
     <header>
       <h1 class="title">replusminus<h1>
     </header>
-    <main>
-      <h2 style="">Maintenance</h2>
-      <div style="margin: 0px auto; width: 100%; text-align: center;">
-	<img src="images/waiting.png" style="margin: 0px auto; width: 200px;" />
-        <p style="margin: 0px auto; width: 100%; text-align: center; color: #00966C; font-size: 20px;">Please come back later.</p>
+    <main style="padding: 10px; padding-bottom: 60px;">
+      <div class="warning">
+        <h2 style="">Maintenance</h2>
+        <div style="margin: 0px auto; width: 100%; text-align: center;">
+          <img src="images/waiting.png" style="margin: 0px auto; width: 200px;" />
+          <p class="message" style="">We are working on our platform to best serve you. Please come back later!</p>
+        </div>
+      </div>
+      <div style="height: 100%; color: #00966C;">
+        <header>
+          <h3>We have a collection of available batteries for you</h3>
+      	</header>
+	      <div class="batteries">
+          <img src="images/AAAA.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/AAA.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/AAA_v.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/AA.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/AA_v.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/C.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/D.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/D_v.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/P9V.png" style="margin: 0px auto; width: 80px;" />
+          <img src="images/P9V_v.png" style="margin: 0px auto; width: 80px;" />
+        </div>
       </div>
     </main>
   </div>
